@@ -252,4 +252,9 @@ $RECYCLE.BIN/
 id_github
 *.pub
 *.png
-pyenv\*
+pyenv\bin
+pyenv\include
+pyenv\lib
+pyenv\lib64
+
+
