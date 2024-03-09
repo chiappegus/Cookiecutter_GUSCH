@@ -32,4 +32,8 @@ y ahora vamos a instalar conda!!
 y creamos otro en env dentro de este con los requeriments
 pip freeze > requeriments.txt
 
+$ python -m cookiecutter https://github.com/platzi/curso-entorno-avanzado-ds --checkout cookiecutter-personal-platzi
+
+
+
 
