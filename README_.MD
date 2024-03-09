@@ -21,3 +21,16 @@ para instalar :
 
 pip install -r requeriments.txt
 
+verificamos en donde esta instalado en este caso con
+which pip 
+which python 
+which pip3
+which python3
+ejemplo
+/mnt/d/Users/hpgus/Desktop/Platzi_Cookiecutter/env/bin/python3
+y ahora vamos a instalar conda!!
+y creamos otro en env dentro de este con los requeriments
+pip freeze > requeriments.txt
+
+
+
