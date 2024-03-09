@@ -33,4 +33,3 @@ y creamos otro en env dentro de este con los requeriments
 pip freeze > requeriments.txt
 
 
-
