@@ -6,3 +6,34 @@ hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. If you want to integrate the remote changes,
 hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+historial -- cuando agarras y trabajas en un proyecto hiciste cambios y hay problemas
+
+
+
+
+hacer el clave :)
+
+
+en el bash  se hace :
+
+verificas que tengas el agente funcionando
+
+eval "$(ssh-agent -s)"
+
+
+borrar si tenes la clave para hacer una nueva (pepito)
+
+rm ~/.ssh/id_rsa_pepito*
+
+creas la clave ::
+
+ ssh-keygen -t rsa -f ~/.ssh/id_rsa_pepito
+
+ luego adjuntas esa clave a tu ssh agent
+ ssh-add ~/.ssh/id_rsa_pepito
+
+ copias tu clave pública para poner en en github
+
+ cat ~/.ssh/id_rsa_pepito.pub 
+
