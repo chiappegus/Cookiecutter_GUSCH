@@ -132,6 +132,28 @@ elloc@DESKTOP-9IHTN86 MINGW64 ~/Desktop/Platzi_Cookiecutter (master|MERGING)
 
 ahora git commit -am "cambio de merge listo"
 
+$ git commit  -am "cambio de merge listo"
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README_.MD', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cookiecutter_testing/.gitingnore', LF will be replaced by CRLF the next time Git touches it    
+[master 550da62] cambio de merge listo
+
+
+$ git push origin master 
+Enter passphrase for key '/c/Users/elloc/.ssh/id_rsa': 
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 3.40 KiB | 696.00 KiB/s, done.
+Total 13 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), completed with 4 local objects.
+To github.com:chiappegus/Platzi_Cookiecutter.git
+   680a3f1..550da62  master -> master
+
+
+
+
 
 
 
