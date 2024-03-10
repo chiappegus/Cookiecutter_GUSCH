@@ -102,6 +102,38 @@ To github.com:chiappegus/Platzi_Cookiecutter.git
 solucionado. el que es que paso con pepito?
 
 
+problemas :
+$ git pull origin master
+Enter passphrase for key '/c/Users/elloc/.ssh/id_rsa': 
+From github.com:chiappegus/Platzi_Cookiecutter
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+solucion :
+
+git pull origin master --allow-unrelated-histories
+
+entonces sucede los siguiente ::
+$ git pull origin master --allow-unrelated-histories
+Enter passphrase for key '/c/Users/elloc/.ssh/id_rsa': 
+From github.com:chiappegus/Platzi_Cookiecutter
+ * branch            master     -> FETCH_HEAD
+Auto-merging .gitignore
+CONFLICT (add/add): Merge conflict in .gitignore
+Auto-merging README_.MD
+CONFLICT (add/add): Merge conflict in README_.MD
+Auto-merging cookiecutter_testing/.gitingnore
+CONFLICT (add/add): Merge conflict in cookiecutter_testing/.gitingnore
+Automatic merge failed; fix conflicts and then commit the result.
+
+lo corrigo con el COn el visual studio code.
+
+elloc@DESKTOP-9IHTN86 MINGW64 ~/Desktop/Platzi_Cookiecutter (master|MERGING)
+
+ahora git commit -am "cambio de merge listo"
+
+
+
 
 para saber donde esta el remoto , bajo cual se hace el pull push :
 
