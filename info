@@ -1,0 +1,129 @@
+> git push -u upstream master
+To github.com:chiappegus/Platzi_Cookiecutter.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'github.com:chiappegus/Platzi_Cookiecutter.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+historial -- cuando agarras y trabajas en un proyecto hiciste cambios y hay problemas
+
+
+
+
+hacer el clave :)
+
+
+en el bash  se hace :
+
+verificas que tengas el agente funcionando
+
+eval "$(ssh-agent -s)"
+
+
+borrar si tenes la clave para hacer una nueva (pepito)
+
+rm ~/.ssh/id_rsa_pepito*
+
+creas la clave ::
+
+ ssh-keygen -t rsa -f ~/.ssh/id_rsa_pepito
+
+ luego adjuntas esa clave a tu ssh agent
+ ssh-add ~/.ssh/id_rsa_pepito
+
+ copias tu clave pública para poner en en github
+
+ cat ~/.ssh/id_rsa_pepito.pub 
+
+
+
+ luego podes hacer lo siguiente : 
+
+ como cambie de directorio tuve que modificar el global :
+  git config --global --add safe.directory D:/Users/User/Desktop/Platzi_Cookiecutter_1
+
+
+me fijo el el remote como esta configurado :
+git remote show 
+origin
+upstream
+
+tengo esos dos  : 
+se usa en este caso el  upstream (master por que esta en github)
+
+git pull  upstream master
+me tira el error :
+
+Enter passphrase for key '/c/Users/US/.ssh/id_rsa':
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+tire lo siguiente y fue la solucion :
+git pull upstream master  --allow-unrelated-histories
+
+Auto-merging .gitignore
+CONFLICT (add/add): Merge conflict in .gitignore
+CONFLICT (file/directory): directory in the way of cookiecutter_te
+
+me trajo lo que tenia y tuve que ver lo que tenia . ya que lo tenia que resolver
+aceptando o no , use VC para aceptar o no los cambios.
+
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+$ git commit -am  "resuelto el merge"
+
+git pull upstream master 
+rom github.com:chiappegus/Platzi_Cookiecutter
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+
+git commit -am "tuto _ info_rsa"
+
+ git push  upstream master 
+Enter passphrase for key '/c/Users/use/.ssh/id_rsa': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 787 bytes | 787.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:chiappegus/Platzi_Cookiecutter.git
+   2d9a699..0cc8a67  master -> master
+
+solucionado. el que es que paso con pepito?
+
+
+
+para saber donde esta el remoto , bajo cual se hace el pull push :
+
+$ git remote show
+    origin
+    upstream
+$ git remote show upstream 
+
+Enter passphrase for key '/c/Users/us/.ssh/id_rsa': 
+* remote upstream
+  Fetch URL: git@github.com:chiappegus/Platzi_Cookiecutter.git
+  Push  URL: git@github.com:chiappegus/Platzi_Cookiecutter.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+
+primero haces la bajada al upstream mio desde el master. 
+git pull upstream master
+
+git push upstream master (subí desde el upstream al master)
+
+
+cuantas cosas!S
