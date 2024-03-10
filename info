@@ -120,3 +120,7 @@ Enter passphrase for key '/c/Users/us/.ssh/id_rsa':
   Local ref configured for 'git push':
     master pushes to master (up to date)
 
+primero haces la bajada al upstream mio desde el master. 
+git pull upstream master
+
+git push upstream master (subí desde el upstream al master)
