@@ -219,3 +219,7 @@ docker compose down
 
 
 
+para ejecutar :
+$ source env/Scripts/activate
+$ cookiecutter . 
+
