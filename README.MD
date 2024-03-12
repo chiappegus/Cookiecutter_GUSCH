@@ -220,6 +220,9 @@ docker compose down
 
 
 para ejecutar :
+el archivo de configuracion es cookiecutter.json
+y esta basado en la carpeta {{cookiecutter.project_slug}}
+
 $ source env/Scripts/activate
 $ cookiecutter . 
 
