@@ -40,3 +40,4 @@ wsl-pathlib==0.1.4
 pathlib2==2.3.7.post1 
 pyhere==1.0.0
 pyprojroot==0.3.0
+ipykernel
